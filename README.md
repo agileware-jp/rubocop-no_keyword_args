@@ -1,5 +1,7 @@
 # RuboCop::NoKeywordArgs
 
+A cop prohibits method definitions with keyword arguments. See [no_keyword_args_spec.rb](https://github.com/agileware-jp/rubocop-no_keyword_args/blob/master/spec/no_keyword_args_spec.rb) for details.
+
 ## Installation
 
 **Gemfile**
