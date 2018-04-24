@@ -6,12 +6,12 @@ require "rubocop/no_keyword_args/version"
 Gem::Specification.new do |spec|
   spec.name          = "rubocop-no_keyword_args"
   spec.version       = Rubocop::NoKeywordArgs::VERSION
-  spec.authors       = ["fkdkent"]
-  spec.email         = ["fkdkent@agileware.jp"]
+  spec.authors       = ["Agileware Inc."]
+  spec.email         = ["info@agileware.jp"]
 
-  spec.summary       = %q{TODO: Write a short summary, because RubyGems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = %q{Prohibits keyword arguments in method definitions}
+  spec.description   = spec.summary
+  spec.homepage      = "https://github.com/agileware-jp/rubocop-no_keyword_args/"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
   # to allow pushing to a single host or delete this section to allow pushing to any host.
