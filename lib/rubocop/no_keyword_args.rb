@@ -1,7 +1,9 @@
+require "rubocop"
 require "rubocop/no_keyword_args/version"
 
-module Rubocop
+require "rubocop/cop/lint/no_keyword_args"
+
+module RuboCop
   module NoKeywordArgs
-    # Your code goes here...
   end
 end
