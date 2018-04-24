@@ -1,0 +1,6 @@
+require: rubocop/no_keyword_args
+
+Lint/NoKeywordArgs:
+  Description: Prohibits keyword arguments in method definitions
+  Enabled: true
+  Severity: error
