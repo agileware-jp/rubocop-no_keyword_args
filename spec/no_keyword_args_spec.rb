@@ -9,6 +9,13 @@ RSpec.describe RuboCop::Cop::Lint::NoKeywordArgs do
       RUBY
     }
 
+    it {
+      expect_offense(<<~RUBY)
+        def foo(bar: nil); end
+                ^^^^^^^^ Do not use keyword arguments
+      RUBY
+    }
+
     it { expect_no_offenses('def foo(bar); end') }
   end
 
@@ -17,6 +24,13 @@ RSpec.describe RuboCop::Cop::Lint::NoKeywordArgs do
       expect_offense(<<~RUBY)
         define_method :foo do |bar:|; end
                                ^^^^ Do not use keyword arguments
+      RUBY
+    }
+
+    it {
+      expect_offense(<<~RUBY)
+        define_method :foo do |bar: nil|; end
+                               ^^^^^^^^ Do not use keyword arguments
       RUBY
     }
 
