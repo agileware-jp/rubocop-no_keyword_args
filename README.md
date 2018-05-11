@@ -10,8 +10,6 @@ A certain Ruby code preprocessor can't handle method definitions with keyword ar
 
 **Gemfile**
 
-NOTE: This gem is not released on rubygems.org, so you have to set [`BUNDLE_GITHUB__COM` environment variable](http://bundler.io/man/bundle-config.1.html) to install.
-
 ```ruby
 group :development do
   gem 'rubocop-no_keyword_args', git: 'https://github.com/agileware-jp/rubocop-no_keyword_args.git', require: false
