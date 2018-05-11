@@ -2,6 +2,10 @@
 
 A cop prohibits method definitions with keyword arguments. See [no_keyword_args_spec.rb](https://github.com/agileware-jp/rubocop-no_keyword_args/blob/master/spec/no_keyword_args_spec.rb) for details.
 
+## Why?
+
+A certain Ruby code preprocessor can't handle method definitions with keyword arguments. This cop is a workaround for this.
+
 ## Installation
 
 **Gemfile**
