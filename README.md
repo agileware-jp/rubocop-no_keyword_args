@@ -2,11 +2,13 @@
 
 A cop prohibits method definitions with keyword arguments. See [no_keyword_args_spec.rb](https://github.com/agileware-jp/rubocop-no_keyword_args/blob/master/spec/no_keyword_args_spec.rb) for details.
 
+## Why?
+
+Some Ruby code preprocessors cannot handle method definitions with keyword arguments. This cop is a workaround for this.
+
 ## Installation
 
 **Gemfile**
-
-NOTE: This gem is not released on rubygems.org, so you have to set [`BUNDLE_GITHUB__COM` environment variable](http://bundler.io/man/bundle-config.1.html) to install.
 
 ```ruby
 group :development do
