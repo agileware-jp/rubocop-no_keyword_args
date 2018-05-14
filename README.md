@@ -4,7 +4,7 @@ A cop prohibits method definitions with keyword arguments. See [no_keyword_args_
 
 ## Why?
 
-A certain Ruby code preprocessor can't handle method definitions with keyword arguments. This cop is a workaround for this.
+Some Ruby code preprocessors cannot handle method definitions with keyword arguments. This cop is a workaround for this.
 
 ## Installation
 
